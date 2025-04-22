@@ -1,0 +1,32 @@
+[project]
+title = "Toronto Crime"
+version = "0.1.0"
+port = 8501
+slug = "preswald-project"  
+entrypoint = "main.py"
+
+[branding]
+name = "Preswald Project"
+logo = "images/logo.png"
+favicon = "images/favicon.ico"
+primaryColor = "#F89613"
+
+[data.major_crime_indicators]
+type = "csv"
+path = "data/major-crime-indicators.csv"
+
+[data.neighbourhood_map]
+type = "csv"
+path = "data/neighbourhood_map.csv"
+
+[data.mci_map]
+type = "csv"
+path = "data/mci_map.csv"
+
+[data.latlong_id_map]
+type = "csv"
+path = "data/latlong_id_map.csv"
+
+[logging]
+level = "INFO"  
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
